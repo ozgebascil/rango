@@ -1,0 +1,6 @@
+*.py[cod]
+.DS_store
+
+
+/media
+db.sqlite3
