@@ -83,13 +83,19 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATE_DIRS = ('<workspace>/tango_with_django_project/',)
-
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 
-TEMPLATE_DIRS = ('<rango>/tango_with_django_project/',
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+TEMPLATE_DIRS = (
     TEMPLATE_PATH,
 )
+
+STATIC_PATH = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = (
+    STATIC_PATH,
+    )
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
